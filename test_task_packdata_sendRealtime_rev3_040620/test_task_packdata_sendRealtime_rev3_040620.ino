@@ -132,11 +132,6 @@ String buffilenamedel;
 long time_out = 0;
 long time_limit = 100;
 
-#define TALK_DB "DB/talk" //add by rjk
-#define DB_READY "DB/run" //add by rjk
-
-
-
 
 /*----------------------Functions Machine---------------------*/
 
@@ -641,9 +636,6 @@ void sendsdcardtomqtt() {
 }
 
 
-
-
-
 /*-------------------Task Functions-----------------------*/
 
 void task_CheckWiFi_and_Mqtt(void* Param){
@@ -807,7 +799,7 @@ static void task_packDataSend(void* Param){
       Serial.println("Can't Save SD Card To RAM");
     }
   }
- Serial.print("Data save RAM: ");
+// Serial.print("Data save RAM: ");
   for (int i = 0; i < addrsize; i++)
   {
     mac.writeAddress(write_addeeprom, datasaveram[i]);
