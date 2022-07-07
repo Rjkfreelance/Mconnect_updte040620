@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "moment": "^2.26.0",
+    "moment": "^2.29.4",
     "mqtt": "^4.1.0",
     "mysql": "^2.18.1"
   }
